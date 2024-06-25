@@ -12,11 +12,20 @@ export default function Home() {
 			<section className='items-center justify-center bg-gradient-to-b from-black to-purple-950'>
 				<div className='m-auto mt-10 h-full w-3/6'>
 					<div>
-						<h1>
-							Hi! Im Kevin,
-							<p>Full Stack Developer</p>
-						</h1>
+						<h1 className='text-2xl font-bold'>Kevin Vega</h1>
+						<p className='font-sans'>Full Stack Developer</p>
 					</div>
+					<section className='flex h-[150px] w-full flex-col items-center'>
+						<h1 className='inline border-b-2 text-center'>
+							About Me
+						</h1>
+						<div className='mt-5 flex items-center justify-center gap-5'>
+							Soy estudiante de Ingenieria de sistemas, llevo
+							estudiando programación web por 3 años. Soy una
+							persona autodidacta, me gusta aprender cosas nuevas
+							y siempre estoy en constante aprendizaje.
+						</div>
+					</section>
 					<section className='flex h-[150px] w-full flex-col items-center'>
 						<h1 className='inline border-b-2 text-center'>
 							Skills
@@ -30,7 +39,7 @@ export default function Home() {
 					</section>
 					<section className='flex h-3/4 w-full flex-col items-center sm:mb-20'>
 						<h1 className='inline border-b-2 text-center'>
-							Proyectos
+							Projects
 						</h1>
 						<div className='bg-contact mt-10 flex flex-col rounded-lg border border-white/20 sm:h-[50%] sm:w-[50%] sm:px-5'>
 							<div className='p-5'>
@@ -67,15 +76,18 @@ export default function Home() {
 
 					<section className='bg-contact mx-auto flex h-44 w-[80%] flex-col items-center justify-center rounded-lg border border-white/20 sm:w-[38%] sm:px-6'>
 						<h1 className='inline border-b-2 text-center'>
-							Contacto
+							Contact Me
 						</h1>
 						<div className='flex h-20 w-2/4 items-center justify-center gap-5 '>
-							<a href=''>
+							<a href='mailto:kevinjosevega28@gmail.com'>
 								<button className='inline-flex h-12 w-12 items-center justify-center rounded-lg border border-white/20 font-medium transition-colors hover:opacity-80 sm:w-auto sm:px-6'>
 									<Mail className='size-5 cursor-pointer' />{' '}
 								</button>
 							</a>
-							<a href='https://www.linkedin.com/in/kevin-jos%C3%A9-vega-navas-462aa1259/'>
+							<a
+								href='https://www.linkedin.com/in/kevin-vega-462aa1259/'
+								target='_blank'
+							>
 								<button className='inline-flex h-12 w-12 items-center justify-center rounded-lg border border-white/20 font-medium transition-colors hover:opacity-80 sm:w-auto sm:px-6'>
 									<Linkedin className='size-5' />
 								</button>
