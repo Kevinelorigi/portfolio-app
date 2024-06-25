@@ -41,35 +41,68 @@ export default function Home() {
 						<h1 className='inline border-b-2 text-center'>
 							Projects
 						</h1>
-						<div className='bg-contact mt-10 flex flex-col rounded-lg border border-white/20 sm:h-[50%] sm:w-[50%] sm:px-5'>
-							<div className='p-5'>
-								<Image
-									src='/Fragancistico.webp'
-									alt='One Project'
-									width={300}
-									height={250}
-									className='cursor-pointer rounded-lg shadow-2xl transition hover:scale-105'
-								/>
-							</div>
-							<p className='font-mediumn text-md mb-2 px-4 text-white/80'>
-								En proceso. Es una página web que tiene como
-								objetivo ayudar a las personas saber que
-								fragancia usar en cada ocasión.
-							</p>
+						<div className='gap-10 pb-5 sm:flex'>
+							<div className='bg-contact mt-10 flex flex-col rounded-lg border border-white/20 sm:min-h-[50%] sm:w-[50%] sm:px-5'>
+								<div className='p-5'>
+									<Image
+										src='/Fragancistico.webp'
+										alt='One Project'
+										width={300}
+										height={250}
+										className='cursor-pointer rounded-lg shadow-2xl transition hover:scale-105'
+									/>
+								</div>
+								<p className='font-mediumn text-md mb-2 px-4 text-white/80'>
+									En proceso. Es una página web que tiene como
+									objetivo ayudar a las personas saber que
+									fragancia usar en cada ocasión.
+								</p>
 
-							<div className='mx-4 mb-2 flex items-center justify-start gap-3'>
-								<a
-									target='_blank'
-									href='https://github.com/Kevinelorigi/fragance-tracker'
-								>
-									<Github className='size-5 text-white transition hover:scale-90' />
-								</a>
-								<a
-									target='_blank'
-									href='https://fragance-tracker-git-navbar-kevinelorigis-projects.vercel.app/'
-								>
-									<Globe className='size-5 text-white transition hover:scale-90' />
-								</a>
+								<div className='mx-4 mb-2 flex items-center justify-start gap-3'>
+									<a
+										target='_blank'
+										href='https://github.com/Kevinelorigi/fragance-tracker'
+									>
+										<Github className='size-5 text-white transition hover:scale-90' />
+									</a>
+									<a
+										target='_blank'
+										href='https://fragance-tracker-git-navbar-kevinelorigis-projects.vercel.app/'
+									>
+										<Globe className='size-5 text-white transition hover:scale-90' />
+									</a>
+								</div>
+							</div>
+							<div className='bg-contact mt-10 flex flex-col rounded-lg border border-white/20 sm:min-h-[50%] sm:w-[50%] sm:px-5'>
+								<div className='p-5'>
+									<Image
+										src='/TailwindCSS.webp'
+										alt='One Project'
+										width={300}
+										height={250}
+										className='cursor-pointer rounded-lg shadow-2xl transition hover:scale-105'
+									/>
+								</div>
+								<p className='font-mediumn text-md mb-2 px-4 text-white/80'>
+									En proceso. Es una página web que tiene como
+									objetivo ayudar a las personas saber que
+									fragancia usar en cada ocasión.
+								</p>
+
+								<div className='mx-4 mb-2 flex items-center justify-start gap-3'>
+									<a
+										target='_blank'
+										href='https://github.com/Kevinelorigi/tailwindcss-transform'
+									>
+										<Github className='size-5 text-white transition hover:scale-90' />
+									</a>
+									<a
+										target='_blank'
+										href='https://tailwindcss-transform.vercel.app/'
+									>
+										<Globe className='size-5 text-white transition hover:scale-90' />
+									</a>
+								</div>
 							</div>
 						</div>
 					</section>
