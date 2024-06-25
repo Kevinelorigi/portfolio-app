@@ -84,9 +84,9 @@ export default function Home() {
 									/>
 								</div>
 								<p className='font-mediumn text-md mb-2 px-4 text-white/80'>
-									En proceso. Es una página web que tiene como
-									objetivo ayudar a las personas saber que
-									fragancia usar en cada ocasión.
+									En proceso. Es un proyecto que tiene como
+									objetivo ayudar a las personas a facilitar
+									la creación de paginas web con tailwindcss.
 								</p>
 
 								<div className='mx-4 mb-2 flex items-center justify-start gap-3'>
