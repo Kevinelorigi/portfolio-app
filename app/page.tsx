@@ -13,14 +13,14 @@ export default function Home() {
 				<div className='m-auto mt-10 h-full w-3/6'>
 					<div>
 						<h1 className='text-2xl font-bold'>Kevin Vega</h1>
-						<p className='font-sans'>Ingeniero de Sistemas | Junior Software Developer</p>
+						<p className='font-sans'>Systems Engineer | Junior Software Developer</p>
 					</div>
 					<section className='flex h-[150px] w-full flex-col items-center'>
 						<h1 className='inline border-b-2 text-center'>
-							Sobre Mi
+							About Me
 						</h1>
 						<div className='mt-5 flex items-center justify-center gap-5'>
-						Soy desarrollador Full Stack con experiencia en la creación de aplicaciones web modernas utilizando tecnologías como Next.js, TypeScript y Prisma. Me apasiona el desarrollo limpio y escalable, la automatización de procesos y la mejora continua. Busco siempre aportar soluciones efectivas que generen impacto real.
+						I'm a Full Stack developer with experience in creating modern web applications using technologies like Next.js, TypeScript, and Prisma. I'm passionate about clean and scalable development, process automation, and continuous improvement. I always seek to provide effective solutions that generate real impact.
 						</div>
 					</section>
 					<section className='flex h-[150px] w-full flex-col items-center'>
@@ -43,7 +43,7 @@ export default function Home() {
 							<div className='group relative'>
 								<Js className='size-8' />
 								<div className='absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap'>
-									Javascript
+									JavaScript
 								</div>
 							</div>
 							<div className='group relative'>
@@ -58,8 +58,8 @@ export default function Home() {
 						<h1 className='inline border-b-2 text-center'>
 							Projects
 						</h1>
-						<div className='gap-10 pb-5 sm:flex'>
-							<div className='bg-contact mt-10 flex flex-col rounded-lg border border-white/20 sm:min-h-[50%] sm:w-[50%] sm:px-5'>
+						<div className='projects-container flex flex-wrap items-stretch gap-6 pb-5 mt-10 w-full justify-center'>
+							<div className='bg-contact flex flex-col rounded-lg border border-white/20 w-[45%] max-w-[500px] px-5'>
 								<div className='p-5'>
 									<Image
 										src='/Polifitnes.webp'
@@ -70,20 +70,20 @@ export default function Home() {
 									/>
 								</div>
 								<h3 className='font-bold text-lg mb-2 px-4 text-white'>PoliFitness</h3>
-								<p className='font-mediumn text-md mb-2 px-4 text-white/80'>
-									Sistema de gestión de usuarios con autenticación y roles (ADMIN, DOCTOR, COACH, USUARIO). Desarrollado con Next.js, Prisma, TypeScript, Docker y TablePlus.
+								<p className='font-mediumn text-md mb-2 px-4 text-white/80 flex-grow'>
+									User management system with authentication and roles (ADMIN, DOCTOR, COACH, USER). Developed with Next.js, Prisma, TypeScript, Docker and TablePlus.
 								</p>
-								<p className='text-sm mb-2 px-4 text-green-400'>Estado: Proyecto terminado</p>
+								<p className='text-sm mb-2 px-4 text-green-400'>Status: Project completed</p>
 
 								<div className='mx-4 mb-2 flex items-center justify-start gap-3'>
 									<Github className='size-5 text-gray-500' />
 									<Globe className='size-5 text-gray-500' />
 								</div>
 							</div>
-							<div className='bg-contact mt-10 flex flex-col rounded-lg border border-white/20 sm:min-h-[50%] sm:w-[50%] sm:px-5'>
+							<div className='bg-contact flex flex-col rounded-lg border border-white/20 w-[45%] max-w-[500px] px-5'>
 								<div className='p-5'>
 									<Image
-										src='/TailwindCSS.webp'
+										src='/Kocopink.jpg'
 										alt='Kocopink Project'
 										width={300}
 										height={250}
@@ -91,29 +91,23 @@ export default function Home() {
 									/>
 								</div>
 								<h3 className='font-bold text-lg mb-2 px-4 text-white'>Kocopink</h3>
-								<p className='font-mediumn text-md mb-2 px-4 text-white/80'>
-									E-commerce desarrollado en React para una microempresa, enfocado en venta de productos personalizados.
+								<p className='font-mediumn text-md mb-2 px-4 text-white/80 flex-grow'>
+									E-commerce developed in React for a microenterprise, focused on selling personalized products.
 								</p>
-								<p className='text-sm mb-2 px-4 text-green-400'>Estado: Proyecto finalizado</p>
+								<p className='text-sm mb-2 px-4 text-green-400'>Status: Project completed</p>
 
 								<div className='mx-4 mb-2 flex items-center justify-start gap-3'>
 									<a
 										target='_blank'
-										href='#'
+										href='https://github.com/Kevinelorigi/KocoPinkFinal'
 									>
 										<Github className='size-5 text-white transition hover:scale-90' />
 									</a>
-									<a
-										target='_blank'
-										href='#'
-									>
-										<Globe className='size-5 text-white transition hover:scale-90' />
-									</a>
+									<Globe className='size-5 text-gray-500' />
+									
 								</div>
 							</div>
-						</div>
-						<div className='gap-10 pb-5 sm:flex justify-center'>
-							<div className='bg-contact mt-10 flex flex-col rounded-lg border border-white/20 sm:min-h-[50%] sm:w-[50%] sm:px-5'>
+							<div className='bg-contact flex flex-col rounded-lg border border-white/20 w-[45%] max-w-[500px] px-5'>
 								<div className='p-5'>
 									<Image
 										src='/Fragancistico.webp'
@@ -124,10 +118,10 @@ export default function Home() {
 									/>
 								</div>
 								<h3 className='font-bold text-lg mb-2 px-4 text-white'>Fragancístico</h3>
-								<p className='font-mediumn text-md mb-2 px-4 text-white/80'>
-									Catálogo digital de perfumes con funciones básicas de tienda virtual.
+								<p className='font-mediumn text-md mb-2 px-4 text-white/80 flex-grow'>
+									Digital perfume catalog with basic virtual store functions.
 								</p>
-								<p className='text-sm mb-2 px-4 text-yellow-400'>Estado: En desarrollo</p>
+								<p className='text-sm mb-2 px-4 text-yellow-400'>Status: In development</p>
 
 								<div className='mx-4 mb-2 flex items-center justify-start gap-3'>
 									<a
