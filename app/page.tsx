@@ -1,10 +1,8 @@
-import { Mail, Linkedin, Globe } from 'lucide-react';
-import React from './svg/logo-react';
-import Node from './svg/logo-nodejs';
-import Js from './svg/logo-js';
-import Tailwind from './svg/logo-tailwind';
-import Image from 'next/image';
-import Github from './svg/logo-github';
+import { Mail, Linkedin } from 'lucide-react';
+import ProjectCard from './components/ProjectCard';
+import SkillIcon from './components/SkillIcon';
+import { projects } from './data/projects';
+import { skills } from './data/skills';
 
 export default function Home() {
 	return (
@@ -28,30 +26,13 @@ export default function Home() {
 							Skills
 						</h1>
 						<div className='flex h-20 w-2/4 items-center justify-center gap-5'>
-							<div className='group relative'>
-								<React className='size-8' />
-								<div className='absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap'>
-									React
-								</div>
-							</div>
-							<div className='group relative'>
-								<Node className='size-8' />
-								<div className='absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap'>
-									Node.js
-								</div>
-							</div>
-							<div className='group relative'>
-								<Js className='size-8' />
-								<div className='absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap'>
-									JavaScript
-								</div>
-							</div>
-							<div className='group relative'>
-								<Tailwind className='size-8' />
-								<div className='absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap'>
-									TailwindCSS
-								</div>
-							</div>
+							{skills.map((skill) => (
+								<SkillIcon
+									key={skill.name}
+									icon={skill.icon}
+									name={skill.name}
+								/>
+							))}
 						</div>
 					</section>
 					<section className='flex h-3/4 w-full flex-col items-center sm:mb-20'>
@@ -59,85 +40,19 @@ export default function Home() {
 							Projects
 						</h1>
 						<div className='projects-container flex flex-wrap items-stretch gap-6 pb-5 mt-10 w-full justify-center'>
-							<div className='bg-contact flex flex-col rounded-lg border border-white/20 w-[45%] max-w-[500px] px-5'>
-								<div className='p-5'>
-									<Image
-										src='/Polifitnes.webp'
-										alt='PoliFitness Project'
-										width={300}
-										height={250}
-										className='cursor-pointer rounded-lg shadow-2xl transition hover:scale-105'
-									/>
-								</div>
-								<h3 className='font-bold text-lg mb-2 px-4 text-white'>PoliFitness</h3>
-								<p className='font-mediumn text-md mb-2 px-4 text-white/80 flex-grow'>
-									User management system with authentication and roles (ADMIN, DOCTOR, COACH, USER). Developed with Next.js, Prisma, TypeScript, Docker and TablePlus.
-								</p>
-								<p className='text-sm mb-2 px-4 text-green-400'>Status: Project completed</p>
-
-								<div className='mx-4 mb-2 flex items-center justify-start gap-3'>
-									<Github className='size-5 text-gray-500' />
-									<Globe className='size-5 text-gray-500' />
-								</div>
-							</div>
-							<div className='bg-contact flex flex-col rounded-lg border border-white/20 w-[45%] max-w-[500px] px-5'>
-								<div className='p-5'>
-									<Image
-										src='/Kocopink.jpg'
-										alt='Kocopink Project'
-										width={300}
-										height={250}
-										className='cursor-pointer rounded-lg shadow-2xl transition hover:scale-105'
-									/>
-								</div>
-								<h3 className='font-bold text-lg mb-2 px-4 text-white'>Kocopink</h3>
-								<p className='font-mediumn text-md mb-2 px-4 text-white/80 flex-grow'>
-									E-commerce developed in React for a microenterprise, focused on selling personalized products.
-								</p>
-								<p className='text-sm mb-2 px-4 text-green-400'>Status: Project completed</p>
-
-								<div className='mx-4 mb-2 flex items-center justify-start gap-3'>
-									<a
-										target='_blank'
-										href='https://github.com/Kevinelorigi/KocoPinkFinal'
-									>
-										<Github className='size-5 text-white transition hover:scale-90' />
-									</a>
-									<Globe className='size-5 text-gray-500' />
-									
-								</div>
-							</div>
-							<div className='bg-contact flex flex-col rounded-lg border border-white/20 w-[45%] max-w-[500px] px-5'>
-								<div className='p-5'>
-									<Image
-										src='/Fragancistico.webp'
-										alt='Fragancístico Project'
-										width={300}
-										height={250}
-										className='cursor-pointer rounded-lg shadow-2xl transition hover:scale-105'
-									/>
-								</div>
-								<h3 className='font-bold text-lg mb-2 px-4 text-white'>Fragancístico</h3>
-								<p className='font-mediumn text-md mb-2 px-4 text-white/80 flex-grow'>
-									Digital perfume catalog with basic virtual store functions.
-								</p>
-								<p className='text-sm mb-2 px-4 text-yellow-400'>Status: In development</p>
-
-								<div className='mx-4 mb-2 flex items-center justify-start gap-3'>
-									<a
-										target='_blank'
-										href='https://github.com/Kevinelorigi/fragance-tracker'
-									>
-										<Github className='size-5 text-white transition hover:scale-90' />
-									</a>
-									<a
-										target='_blank'
-										href='https://fragance-tracker-git-navbar-kevinelorigis-projects.vercel.app/'
-									>
-										<Globe className='size-5 text-white transition hover:scale-90' />
-									</a>
-								</div>
-							</div>
+							{projects.map((project) => (
+								<ProjectCard
+									key={project.id}
+									title={project.title}
+									description={project.description}
+									status={project.status}
+									imageSrc={project.imageSrc}
+									imageAlt={project.imageAlt}
+									githubUrl={project.githubUrl}
+									deployUrl={project.deployUrl}
+									isPrivate={project.isPrivate}
+								/>
+							))}
 						</div>
 					</section>
 
