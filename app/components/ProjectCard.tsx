@@ -33,14 +33,14 @@ export default function ProjectCard({
   };
 
   return (
-    <div className='bg-contact flex flex-col rounded-lg border border-white/20 w-[45%] max-w-[500px] px-5'>
+    <div className='bg-contact flex flex-col rounded-lg border border-white/20 w-full sm:w-[45%] max-w-[500px] px-5'>
       <div className='p-5'>
         <Image
           src={imageSrc}
           alt={imageAlt}
           width={300}
           height={250}
-          className='cursor-pointer rounded-lg shadow-2xl transition hover:scale-105'
+          className='w-full h-auto cursor-pointer rounded-lg shadow-2xl transition hover:scale-105'
         />
       </div>
       <h3 className='font-bold text-lg mb-2 px-4 text-white'>{title}</h3>
