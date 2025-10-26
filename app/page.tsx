@@ -18,7 +18,7 @@ export default function Home() {
 							About Me
 						</h1>
 						<div className='mt-5 flex items-center justify-center gap-5'>
-						I&apos;m a Full Stack developer with experience in creating modern web applications using technologies like Next.js, TypeScript, and Prisma. I&apos;m passionate about clean and scalable development, process automation, and continuous improvement. I always seek to provide effective solutions that generate real impact.
+						 I am Full Stack developer with experience in creating modern web applications using technologies like Next.js, TypeScript, and Prisma. I am passionate about clean and scalable development, process automation, and continuous improvement. I always seek to provide effective solutions that generate real impact.
 						</div>
 					</section>
 					<section className='flex h-[150px] w-full flex-col items-center'>
