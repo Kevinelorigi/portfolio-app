@@ -38,7 +38,7 @@ export const projects: Project[] = [
     imageSrc: '/Fragancistico.webp',
     imageAlt: 'Fragancístico Project',
     githubUrl: 'https://github.com/Kevinelorigi/fragance-tracker',
-    deployUrl: 'https://fragance-tracker-git-navbar-kevinelorigis-projects.vercel.app/',
+    deployUrl: 'https://fragance-tracker.vercel.app/',
     isPrivate: false
   }
 ];
